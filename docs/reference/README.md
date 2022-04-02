@@ -10,3 +10,5 @@ This section lists all the available [Form](/reference/form-fields.html) and [Li
 In addition to that, you might also want to customize the general layout, such as the navigation bar of your admin area.
 
 - [Layout](/reference/layout.html)
+
+![Latest Version on Packagist](https://img.shields.io/packagist/v/flatpack/flatpack.svg?style=flat-square)

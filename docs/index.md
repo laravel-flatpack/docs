@@ -41,9 +41,7 @@ php artisan make:flatpack Post
 
 :tada: Ready! Now visit: `/backend/posts`
 
-## Documentation
+Learn how to customize list and form templates.
+[Read more](/guide/)
 
-- Requirements: [Laravel](https://laravel.com)
-
-- Learn how to customize list and form templates.
-  [Read more](/guide/)
+![Latest Version on Packagist](https://img.shields.io/packagist/v/flatpack/flatpack.svg?style=flat-square)

@@ -17,6 +17,11 @@ With Flatpack you can:
 - Customise UI and components with simple and declarative [YAML](https://yaml.org/) files.
 - Build a complete administration panel for your site in seconds.
 
+## Requirements
+
+- Laravel 8
+- PHP 8.x
+
 ## Installation
 
 Install the package via composer:

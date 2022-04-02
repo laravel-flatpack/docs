@@ -1,7 +1,7 @@
 const { path } = require("@vuepress/utils");
 
 module.exports = {
-  base: "/",
+  base: "/docs/",
   lang: "en-US",
   title: "Flatpack",
   description: "Administration panel for Laravel, ready to assemble.",

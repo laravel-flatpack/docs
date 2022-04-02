@@ -39,7 +39,7 @@ Generate table and form for `App\Models\Post` model (example)
 php artisan make:flatpack Post
 ```
 
-:tada: Ready! Now visit: [http://localhost/backend](http://localhost/backend)
+:tada: Ready! Now visit: `/backend/posts`
 
 ## Documentation
 

@@ -1,16 +1,21 @@
 # Introduction
 
+I wanted a quick way to set up an admin panel for my personal projects.
+All existing solutions required time to write all the boilerplate code, too much code.
+
+I came up with a solution that maps an Eloquent model with two YAML composition files, that define how the panel forms and lists should look.
+
+![Hej!](./images/assemble.png)
+
 Flatpack is probably the quickest and simplest solution to create fast multi-purpose administration panel for your Laravel app.
 
 Out of the box, it provides a rich stack of crafted components, ready to assemble.
-
-![Hej!](./images/assemble.png)
 
 With Flatpack you can:
 
 - Quickly create CRUD (Create, Read, Update, Delete) interfaces for your [Eloquent models](https://laravel.com/docs/8.x/eloquent).
 - Customise UI and components with simple and declarative [YAML](https://yaml.org/) files.
-- Build a complete and dynamic administration panel for your site in seconds.
+- Build a complete administration panel for your site in seconds.
 
 ## Installation
 

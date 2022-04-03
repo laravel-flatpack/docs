@@ -100,4 +100,6 @@ Example:
 
 ## Form Validation
 
-form validation
+Validation rules can be applied to each form field by defining the `rules` option.
+This option accepts all the available [Validation rules](https://laravel.com/docs/9.x/validation#available-validation-rules) 
+provided by Laravel.

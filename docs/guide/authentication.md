@@ -1,53 +1,30 @@
 # Authentication
 
-::: warning
-By default, the authentication middleware is not set. [You need to manually add an authentication middleware](#authentication-middleware) in `config/flatpack.php` before publishing your site.
-:::
+It is important to take an extra step to ensure that only the correct users have access to the admin panel.
 
-Flatpack does not have an authentication system built in. However, it fully supports any [Laravel authentication](https://laravel.com/docs/8.x/authentication) solution.
+## Authorizing access to users
 
-A suggested method is to install a [Starter Kit](https://laravel.com/docs/8.x/starter-kits), like [Laravel Breeze](https://laravel.com/docs/8.x/starter-kits#laravel-breeze), the installation is summarized below.
+The FlatpackUser contract must be implemented in your `App/Model/User` model to grant access to Flatpack. The `isFlatpackAdmin()` method should return true or false depending on whether the user is allowed to access Flatpack.
 
-Install Laravel Breeze package via composer:
+```php
+<?php
 
-```sh
-composer require laravel/breeze --dev
+namespace App\Models;
+
+use Flatpack\Contracts\FlatpackUser;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+class User extends Authenticatable implements FlatpackUser
+{
+    // ...
+
+    public function isFlatpackAdmin(): bool
+    {
+        return in_array($this->email, [
+            'admin@yourdomain.com'
+        ]);
+    }
+}
 ```
 
-Create authentication views, routes, controllers and other resources:
-
-```sh
-php artisan breeze:install
-
-npm install
-npm run dev
-php artisan migrate
-```
-
-Done! Laravel Breeze's routes are defined within the `routes/auth.php` file.
-
----
-
-## Authentication Middleware
-
-Add the authentication middleware in the `middleware.before` array in `config/flatpack.php` configuration file, to protect all Flatpack routes with authentication.
-
-```php{13}
-/*
-|--------------------------------------------------------------------------
-| Middleware
-|--------------------------------------------------------------------------
-|
-| Middleware to be applied to all Flatpack routes.
-|
-*/
-'middleware' => [
-
-    'before' => [
-        'web',
-        'auth'
-    ],
-
-    'after' => []
-]
-```
+In this example, the `isFlatpackAdmin()` method is configured to return true if the user's email address is in an array of whitelisted addresses.

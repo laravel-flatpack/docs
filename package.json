@@ -10,7 +10,7 @@
   "repository": "https://github.com/laravel-flatpack/docs",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs && echo 'laravel-flatpack.com' > ./build/CNAME"
   },
   "license": "MIT",
   "devDependencies": {

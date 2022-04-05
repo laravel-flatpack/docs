@@ -19,8 +19,8 @@ With Flatpack you can:
 
 ## Requirements
 
-- Laravel 8
-- PHP 8.x
+- Laravel 8+
+- PHP 8+
 
 ## Installation
 

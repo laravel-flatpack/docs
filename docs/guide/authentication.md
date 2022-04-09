@@ -4,7 +4,9 @@ It is important to take an extra step to ensure that only the correct users have
 
 ## Authorizing access to users
 
-The FlatpackUser contract must be implemented in your `App/Model/User` model to grant access to Flatpack. The `isFlatpackAdmin()` method should return true or false depending on whether the user is allowed to access Flatpack.
+By default, all users can access Flatpack in local environment.
+
+For non-local environments (e.g. Production), the `FlatpackUser` contract must be implemented in your `App/Model/User` model to grant access to Flatpack. The `isFlatpackAdmin()` method should return true or false depending on whether the user is allowed to access Flatpack.
 
 ```php
 <?php

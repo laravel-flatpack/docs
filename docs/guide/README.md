@@ -57,11 +57,6 @@ This command generates two files into the `/flatpack` directory:
 
 Let's check the result: `/backend/posts`
 
-:::warning
-It is important to take an extra step to ensure that only the correct users have access to the admin panel.
-Check out the [Authentication](authentication.md) section to learn more.
-:::
-
 ### Customizing form and list views
 
 Now that Flatpack is up and running, we can start the assembling. The generated `form.yaml` and `list.yaml` can be [customized](/reference/) by defining **fields** or **columns** of your views.

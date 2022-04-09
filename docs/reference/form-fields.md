@@ -37,7 +37,7 @@ Example:
 | :---------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | type        | Form field type (see [Field Types](#field-types))                                                                                |
 | label       | Field label text.                                                                                                                |
-| placeholder | Field placeholder text.                                                                                                          |
+| placeholder | Input placeholder text.                                                                                                          |
 | group       | Name of the grouping box to include the field within.                                                                            |
 | span        | `half` for 50% width, `full` for 100% width.                                                                                     |
 | rules       | String of validation rules (uses [Laravel Validation rules](https://laravel.com/docs/8.x/validation#available-validation-rules)) |
@@ -101,5 +101,5 @@ Example:
 ## Form Validation
 
 Validation rules can be applied to each form field by defining the `rules` option.
-This option accepts all the available [Validation rules](https://laravel.com/docs/9.x/validation#available-validation-rules) 
+This option accepts all the available [Validation rules](https://laravel.com/docs/9.x/validation#available-validation-rules)
 provided by Laravel.

@@ -1,6 +1,6 @@
 # Introduction
 
-Flatpack is probably the quickest and simplest solution to create fast multi-purpose administration panel for your Laravel app.
+Flatpack is probably the quickest and simplest solution to create fast multi-purpose administration panels for your Laravel app.
 
 Out of the box, it provides a rich stack of crafted components, ready to assemble.
 

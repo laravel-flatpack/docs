@@ -27,7 +27,7 @@ module.exports = {
     themePlugins: {
       mediumZoom: false,
     },
-    logo: "/flatpack-logo.png",
+    logo: "/flatpack-icon.png",
     navbar: [
       {
         text: "Guide",

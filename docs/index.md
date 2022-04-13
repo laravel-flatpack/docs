@@ -1,4 +1,5 @@
 ---
+title: Home
 home: true
 heroImage: /flatpack-logo.png
 tagline: Administration panel for Laravel, ready to assemble.
@@ -19,7 +20,7 @@ features:
 footer: MIT Licensed | Copyright © 2022-present Fausto Quaggia
 ---
 
-# Quick start
+## Quick start
 
 Install the package via composer:
 
@@ -43,5 +44,3 @@ php artisan make:flatpack Post
 
 Learn how to customize list and form templates.
 [Read more](/guide/)
-
-![Latest Version on Packagist](https://img.shields.io/packagist/v/flatpack/flatpack.svg?style=flat-square)

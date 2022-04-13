@@ -1497,11 +1497,6 @@ vue@^3.2.31:
     "@vue/server-renderer" "3.2.31"
     "@vue/shared" "3.2.31"
 
-vuepress-plugin-right-anchor@^2.0.0-rc.3:
-  version "2.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-right-anchor/-/vuepress-plugin-right-anchor-2.0.0-rc.3.tgz#ec3bf7cc76a413a273d6d153b9042c56f0726d67"
-  integrity sha512-RztQbBpRqqkCEHlhodhXddQrN4xq0ZuYh8wuxLYDTakrcmL8hGpTnxqVyJGNEtyOVmNUQLN4Nh0a68KW89sF7g==
-
 vuepress-vite@2.0.0-beta.37:
   version "2.0.0-beta.37"
   resolved "https://registry.yarnpkg.com/vuepress-vite/-/vuepress-vite-2.0.0-beta.37.tgz#06346a27efb789388fea3b403d113f7e37f5dc58"

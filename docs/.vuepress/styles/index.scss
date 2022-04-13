@@ -1,22 +1,20 @@
-@use "./tailwind/dist.css";
-
 :root {
   scroll-behavior: smooth;
 
   // brand colors
   --c-brand: #4d4b6b;
-  --c-brand-light: #2f2e42;
+  --c-brand-light: #393855;
 
   // background colors
   --c-bg: #ffffff;
-  --c-bg-light: #f3f4f5;
-  --c-bg-lighter: #eeeeee;
+  --c-bg-light: #efefef;
+  --c-bg-lighter: #ffffff;
   --c-bg-navbar: var(--c-bg);
   --c-bg-sidebar: var(--c-bg);
-  --c-bg-arrow: #cccccc;
+  --c-bg-arrow: #f3f4f6;
 
   // text colors
-  --c-text: #2c3e50;
+  --c-text: #2a2941;
   --c-text-accent: var(--c-brand);
   --c-text-light: #3a5169;
   --c-text-lighter: #4e6e8e;
@@ -55,7 +53,7 @@
   --t-transform: 0.3s ease;
 
   // code blocks vars
-  --code-bg-color: #282c34;
+  --code-bg-color: #394150;
   --code-hl-bg-color: rgba(0, 0, 0, 0.66);
   --code-ln-color: #9e9e9e;
   --code-ln-wrapper-width: 3.5rem;
@@ -72,19 +70,46 @@
   --sidebar-width: 20rem;
   --sidebar-width-mobile: calc(var(--sidebar-width) * 0.82);
   --content-width: 740px;
-  --homepage-width: 1024px;
+  --homepage-width: 960px;
+}
+
+html.dark {
+  // brand colors
+  --c-brand: #908cc8;
+  --c-brand-light: #908cc8;
+
+  // background colors
+  --c-bg: #1a202c;
+  --c-bg-light: #2b313a;
+  --c-bg-lighter: #262c34;
+
+  // text colors
+  --c-text: #e2e8f0;
+  --c-text-light: #cbd5e0;
+  --c-text-lighter: #edf2f7;
+  --c-text-lightest: #ffffff;
+
+  // border colors
+  --c-border: #3e4c5a;
+  --c-border-dark: #34404c;
+
+  // custom container colors
+  --c-tip: #318a62;
+  --c-warning: #ceab00;
+  --c-warning-bg: #7e755b;
+  --c-warning-title: #ceac03;
+  --c-warning-text: #362e00;
+  --c-danger: #940000;
+  --c-danger-bg: #806161;
+  --c-danger-title: #610000;
+  --c-danger-text: #3a0000;
+  --c-details-bg: #323843;
+
+  // code blocks vars
+  --code-hl-bg-color: #363b46;
 }
 
 // Global styles
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800;900&display=swap");
-
-#app header > span > a {
-  display: flex;
-}
-
-body {
-  font-family: "Inter", sans-serif !important;
-}
 
 a {
   font-weight: 600;
@@ -164,45 +189,21 @@ table {
   --search-item-text-color: var(--c-text-lighter);
   --search-item-focus-bg-color: var(--c-bg-light);
 }
-.search-box {
-  order: 0;
-  margin-right: 0;
-  margin-left: 1rem;
+// .search-box {
+//   order: 0;
+//   margin-right: 0;
+//   margin-left: 1rem;
 
-  .suggestions {
-    left: auto !important;
-    right: 0 !important;
-  }
-}
+//   .suggestions {
+//     left: auto !important;
+//     right: 0 !important;
+//   }
+// }
 
 // shift navbar items after search box
 .navbar-items {
   order: 1;
   margin-left: 1rem;
-}
-
-// plugin right anchor
-.right-anchor {
-  --rightAnchorTextColor: red;
-  --rightAnchorFontSize: 12px;
-  /* Btn */
-  --rightAnchorBtnTextColor: var(--rightAnchorTextColor);
-  --rightAnchorBtnBgColor: #ccc;
-  /* Menu */
-  --rightAnchorMenuTextColor: var(--rightAnchorTextColor);
-
-  &.customClass {
-    display: block !important;
-  }
-}
-
-.dark .right-anchor {
-  --rightAnchorTextColor: yellow;
-  --rightAnchorFontSize: 16px;
-  /* Btn */
-  --rightAnchorBtnTextColor: var(--rightAnchorTextColor);
-  /* Menu */
-  --rightAnchorMenuTextColor: var(--rightAnchorTextColor);
 }
 
 // responsive video
@@ -239,26 +240,21 @@ table {
 .home {
   .hero {
     img {
-      max-width: 450px !important;
-      margin-bottom: 0 !important;
+      max-width: 600px !important;
+      margin: 6rem auto 3rem;
     }
 
     h1 {
-      font-size: 4rem !important;
-      font-weight: 900 !important;
-      margin-top: 0 !important;
-      color: #2f2e42 !important;
-
-      @media screen and (min-width: 768px) {
-        font-size: 5rem !important;
-      }
+      display: none;
     }
     .description {
       max-width: 100% !important;
+      margin-bottom: 4rem;
     }
   }
 
   .features {
-    margin: 5rem auto;
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
   }
 }

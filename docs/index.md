@@ -1,6 +1,8 @@
 ---
+title: Home
 home: true
 heroImage: /flatpack-logo.png
+heroImageDark: /flatpack-logo-dark.png
 tagline: Administration panel for Laravel, ready to assemble.
 actions:
   - text: Quick Start
@@ -45,5 +47,3 @@ php artisan make:flatpack Post
 
 Learn how to customize list and form templates.
 [Read more](/guide/)
-
-![Latest Version on Packagist](https://img.shields.io/packagist/v/flatpack/flatpack.svg?style=flat-square)

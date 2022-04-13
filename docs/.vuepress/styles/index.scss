@@ -1,3 +1,5 @@
+@use "./tailwind/dist.css";
+
 :root {
   scroll-behavior: smooth;
 
@@ -70,11 +72,15 @@
   --sidebar-width: 20rem;
   --sidebar-width-mobile: calc(var(--sidebar-width) * 0.82);
   --content-width: 740px;
-  --homepage-width: 960px;
+  --homepage-width: 1024px;
 }
 
 // Global styles
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800;900&display=swap");
+
+#app header > span > a {
+  display: flex;
+}
 
 body {
   font-family: "Inter", sans-serif !important;
@@ -253,7 +259,6 @@ table {
   }
 
   .features {
-    margin-top: 5rem !important;
-    margin-bottom: 5rem !important;
+    margin: 5rem auto;
   }
 }

@@ -19,6 +19,8 @@ features:
 footer: MIT Licensed | Copyright © 2022-present Fausto Quaggia
 ---
 
+<DemoForm />
+
 # Quick start
 
 Install the package via composer:

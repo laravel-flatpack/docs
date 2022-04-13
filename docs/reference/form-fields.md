@@ -50,6 +50,7 @@ Example:
 - [Email](#email-input)
 - [Textarea](#textarea-input)
 - [Editor](#editor)
+- [Block editor](#block-editor)
 
 </div><div class="column">
 
@@ -80,7 +81,15 @@ Example:
 
 ### Datetime picker
 
-`datetimepicker` - renders a datetime picker input box.
+`datetime-picker` - renders a datetime picker input box.
+
+### Editor
+
+`editor` - renders a WYSIWYG text editor using [CkEditor](https://ckeditor.com/)
+
+### Block editor
+
+`block-editor` - renders a next generation block styled editor using [Editor.js](https://editorjs.io/)
 
 ### Heading
 
@@ -93,6 +102,10 @@ Example:
 ### Relation
 
 `relation` - renders a list of checkboxes.
+
+### Tag input
+
+`taginput` - renders a field with tags for related records.
 
 ### Button
 

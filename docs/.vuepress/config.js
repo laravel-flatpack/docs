@@ -50,12 +50,10 @@ module.exports = {
           collapsable: false,
           children: [
             "/guide/",
+            "/guide/how-works/",
             "/guide/configuration/",
             "/guide/authentication/",
             "/guide/generators/",
-            "/guide/lists/",
-            "/guide/forms/",
-            "/guide/navigation/",
           ],
         },
       ],

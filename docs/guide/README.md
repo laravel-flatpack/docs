@@ -1,12 +1,5 @@
 # Introduction
 
-I wanted a quick way to set up an admin panel for my personal projects.
-All existing solutions required time to write all the boilerplate code, too much code.
-
-I came up with a solution that maps an Eloquent model with two YAML composition files, that define how the panel forms and lists should look.
-
-![Hej!](./images/assemble.png)
-
 Flatpack is probably the quickest and simplest solution to create fast multi-purpose administration panel for your Laravel app.
 
 Out of the box, it provides a rich stack of crafted components, ready to assemble.
@@ -19,8 +12,8 @@ With Flatpack you can:
 
 ## Requirements
 
-- Laravel 8+
 - PHP 8+
+- Laravel 8+
 
 ## Installation
 
@@ -67,66 +60,20 @@ Learn more about all the different types of [Form fields](/reference/form-fields
 
 ## Examples
 
-The following examples showcase a `form.yaml` and `list.yaml` for a Post model.
-The form below has different input types (_e.g._ text, textarea and date pickers) with individual validation rules and options. The paginated table rendered in the list has some searchable and sortable columns.
+The following examples illustrate a `form.yaml` and `list.yaml` for a hypothetical Post model.
 
 ### Form composition
 
-Simple example of a custom `/flatpack/posts/form.yaml`
+This form has different input types (_e.g._ [text](../reference/form-fields.md#text-input), [textarea](../reference/form-fields.md#textarea-input) and [date pickers](../reference/form-fields.md#datetime-picker)) with individual options and validation rules.
 
 @[code](../examples/posts/simple-form.yaml)
+
 Learn more: [Form reference](/reference/form-fields)
 
 ### List composition
 
-Simple example of a custom `/flatpack/posts/list.yaml`
+The paginated table rendered has some [searchable](../reference/table-columns.md#column-options) and [sortable](../reference/table-columns.md#column-options) columns.
+
 @[code](../examples/posts/simple-list.yaml)
+
 Learn more: [List reference](/reference/table-columns)
-
-## How it works
-
-Flatpack helps you to quickly create Forms and Table (Lists) components that are mapped to an [Eloquent](https://laravel.com/docs/8.x/eloquent) model instance. It identifies the current model based on the `{entity}` route parameter.
-
-![How Flatpack works](./images/how-works.png)
-
-**_Example:_**
-
-The route `/backend/posts/` (parametrized as `/backend/{entity}/`) will show a Table component that automatically generates queries using the `App\Models\Post` model query builder (using rappasoft's [Livewire Tables](https://github.com/rappasoft/laravel-livewire-tables) under the hood).
-
-The route `/backend/posts/42` (parametrized as `/backend/{entity}/{id}`) will automatically map the current entity to an instance of `App\Models\Post` with the id `42`.
-
-YAML files define how a Form (or Table) component should look like, by mapping each form field (or table column) to a model's attribute.
-
-```yaml
-# /flatpack/posts/form.yaml
-
-fields:
-  title:
-    type: text
-    label: Title
-    placeholder: Your post title goes here
-    rules: required|email
-```
-
-The field `title` above is rendered as a `text` input, mapped to the `title` attribute of the current instance of `Post` (e.g. `$post->title`).
-
-By default, Flatpack does not generate complete form or table templates, and does not include any action in the templates (**read only**). However, it offers a set of basic actions out of the box, that you just have to assign to a button element: `create`, `save` and `delete`.
-
-```yaml
-# /flatpack/posts/form.yaml
-
-toolbar:
-  save:
-    label: Save Post
-    action: save
-    style: primary
-
-  delete:
-    label: Delete
-    action: delete
-    style: danger
-    form: edit
-    confirm: true
-```
-
-Learn more about [Actions](/) and setting up [Custom Actions](/).

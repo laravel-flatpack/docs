@@ -17,7 +17,6 @@ module.exports = {
   theme: "@vuepress/theme-default",
 
   themeConfig: {
-    darkMode: false,
     repo: "",
     editLinks: false,
     docsDir: "",
@@ -28,6 +27,7 @@ module.exports = {
       mediumZoom: false,
     },
     logo: "/flatpack-icon.png",
+    logoDark: "/flatpack-icon-dark.png",
     navbar: [
       {
         text: "Guide",

@@ -2,6 +2,7 @@
 title: Home
 home: true
 heroImage: /flatpack-logo.png
+heroImageDark: /flatpack-logo-dark.png
 tagline: Administration panel for Laravel, ready to assemble.
 actions:
   - text: Quick Start

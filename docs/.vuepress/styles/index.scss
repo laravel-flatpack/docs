@@ -1,3 +1,5 @@
+@import url("/fonts/inter/inter.css");
+
 :root {
   scroll-behavior: smooth;
 
@@ -59,9 +61,10 @@
   --code-ln-wrapper-width: 3.5rem;
 
   // font vars
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  --font-family-code: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --font-family: "Inter var", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-family-code: "Fira Code", Consolas, Monaco, "Andale Mono",
+    "Ubuntu Mono", monospace;
 
   // layout vars
   --navbar-height: 3.6rem;
@@ -200,6 +203,12 @@ table {
 //   }
 // }
 
+.navbar a,
+.navbar a span,
+.navbar a img {
+  display: inline;
+}
+
 // shift navbar items after search box
 .navbar-items {
   order: 1;
@@ -238,6 +247,20 @@ table {
 
 // Homepage
 .home {
+  max-width: 100%;
+  padding: 0;
+
+  .hero,
+  .features,
+  .contents {
+    max-width: var(--homepage-width);
+    margin: 0 auto;
+  }
+
+  .contents {
+    margin: 4rem auto;
+  }
+
   .hero {
     img {
       max-width: 600px !important;

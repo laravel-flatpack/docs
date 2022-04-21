@@ -21,7 +21,11 @@ features:
 footer: MIT Licensed | Copyright © 2022-present Fausto Quaggia
 ---
 
-## Quick start
+<Demo />
+
+<div class="contents">
+
+# Quick start
 
 Install the package via composer:
 
@@ -45,3 +49,5 @@ php artisan make:flatpack Post
 
 Learn how to customize list and form templates.
 [Read more](/guide/)
+
+</div>

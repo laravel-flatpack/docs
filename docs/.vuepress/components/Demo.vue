@@ -1,5 +1,11 @@
 <template>
   <section class="demo">
+    <div class="demo-title">
+      <h2>Create your<br /><span>admin panel</span> in no time</h2>
+      <p>
+        Assemble pre-built components with simple and declarative Yaml files.
+      </p>
+    </div>
     <div class="windows-wrapper">
       <div class="editor-window-wrapper">
         <div class="editor-window">
@@ -148,9 +154,39 @@ export default {
   background: url("/images/bg.jpg") no-repeat center center fixed;
   background-color: #202736;
   margin: 0 auto;
-  padding: 8px;
+  padding: 20px 8px;
   max-width: 100vw;
   overflow: hidden;
+
+  .demo-title {
+    max-width: 1024px;
+    margin: 80px auto 40px;
+    color: #fff;
+
+    h2 {
+      margin: 0 0 20px;
+      border: 0;
+      font-size: 48px;
+      text-align: left;
+      color: #fff;
+      font-weight: 600;
+
+      span {
+        position: relative;
+        font-weight: 900;
+        background: rgba(#010101, 0.5);
+        border-radius: 0.5rem;
+        padding: 0 10px 2px;
+        font-family: var(--font-family-code);
+      }
+    }
+    p {
+      font-size: 20px;
+      text-align: left;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
 
   .windows-wrapper {
     width: 100%;

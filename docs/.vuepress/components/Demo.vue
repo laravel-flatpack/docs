@@ -279,6 +279,11 @@ export default {
       color: #fef3c7;
       flex: 1 1 auto;
       width: 100%;
+
+      pre {
+        margin: 0;
+        font-family: var(--font-family-code);
+      }
     }
   }
   .button-wrapper {

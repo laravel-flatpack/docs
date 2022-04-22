@@ -25,7 +25,7 @@ footer: MIT Licensed | Copyright © 2022-present Fausto Quaggia
 
 <div class="contents">
 
-# Quick start
+## Quick start
 
 Install the package via composer:
 

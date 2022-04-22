@@ -54,6 +54,7 @@ module.exports = {
             "/guide/configuration/",
             "/guide/authentication/",
             "/guide/generators/",
+            "/guide/custom-actions/",
           ],
         },
       ],

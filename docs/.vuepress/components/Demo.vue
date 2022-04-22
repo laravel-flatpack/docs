@@ -1,7 +1,7 @@
 <template>
   <section class="demo">
     <div class="demo-title">
-      <h2>Create your<br /><span>admin panel</span> in no time</h2>
+      <h2>Create your own<br /><span>admin panel</span> in no time</h2>
       <p>
         Assemble pre-built components with simple and declarative Yaml files.
       </p>
@@ -32,22 +32,22 @@
       <div class="preview-window-wrapper">
         <Preview :elements="visibleElements" />
       </div>
-      <div class="button-wrapper">
-        <button v-if="completed" v-on:click="restart" class="button-repeat">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="button-icon"
-            viewBox="0 0 20 20"
-            fill="#ffffff"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-      </div>
+    </div>
+    <div class="replay-wrapper">
+      <button v-if="completed" v-on:click="restart" class="button-repeat">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="button-icon"
+          viewBox="0 0 20 20"
+          fill="#ffffff"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
   </section>
 </template>
@@ -162,22 +162,28 @@ export default {
     max-width: 1024px;
     margin: 80px auto 40px;
     color: #fff;
+    padding: 0 16px;
 
     h2 {
       margin: 0 0 20px;
       border: 0;
-      font-size: 48px;
+      font-size: 36px;
       text-align: left;
       color: #fff;
-      font-weight: 600;
+      font-weight: 900;
+
+      @media (min-width: 640px) {
+        font-size: 48px;
+      }
 
       span {
         position: relative;
-        font-weight: 900;
-        background: rgba(#010101, 0.5);
+        font-weight: 500;
+        font-family: var(--font-family-code);
+        font-style: italic;
+        background: rgba(#010101, 0.4);
         border-radius: 0.5rem;
         padding: 0 10px 2px;
-        font-family: var(--font-family-code);
       }
     }
     p {
@@ -322,16 +328,14 @@ export default {
       }
     }
   }
-  .button-wrapper {
+  .replay-wrapper {
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4rem auto 2rem;
+    margin: 0 auto 2rem;
     text-align: center;
-    grid-column: span 12 / span 12;
-    grid-column-start: 1;
 
     .button-repeat {
       -webkit-font-smoothing: antialiased;

@@ -139,6 +139,7 @@ export default {
             padding: 0.5rem 0.75rem;
             display: block;
             width: 100%;
+            -webkit-border-radius: 0.375rem;
             border-radius: 0.375rem;
             border-width: 1px;
             border-color: #cbd5e1;
@@ -157,12 +158,13 @@ export default {
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             outline: 2px solid transparent;
-            outline-offset: 0;
+            outline-offset: 2px;
 
             &:focus {
-              outline: 2px solid #374151;
-              outline-offset: 0;
+              outline: 0px solid #374151;
+              outline-offset: -2px;
               border-color: transparent;
+              box-shadow: 0 0 0 2px #374151;
             }
 
             @media (min-width: 640px) {

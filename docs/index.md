@@ -19,11 +19,14 @@ features:
   - title: Easy
     details: Form validation, relations, custom actions, table search, sorting, and much more.
 footer: MIT Licensed | Copyright © 2022-present Fausto Quaggia
+externalLinkIcon: false
 ---
 
 <Demo />
 
-<div class="contents">
+<Features />
+
+<section class="contents">
 
 ## Quick start
 
@@ -39,6 +42,8 @@ Publish the configuration file and the compiled assets:
 php artisan vendor:publish --tag="flatpack"
 ```
 
+### Usage
+
 Generate table and form for `App\Models\Post` model (example)
 
 ```text
@@ -50,4 +55,4 @@ php artisan make:flatpack Post
 Learn how to customize list and form templates.
 [Read more](/guide/)
 
-</div>
+</section>

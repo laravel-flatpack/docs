@@ -264,7 +264,16 @@ table {
     margin: 4rem auto;
   }
 
+  .package {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 2rem auto;
+  }
+
   .hero {
+    padding-top: 80px;
     img {
       max-width: 600px !important;
       margin: 6rem auto 3rem;

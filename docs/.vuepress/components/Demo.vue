@@ -34,18 +34,23 @@
       </div>
     </div>
     <div class="replay-wrapper">
-      <button v-if="completed" v-on:click="restart" class="button-repeat">
+      <button v-if="completed" v-on:click="restart" class="button-replay">
         <svg
+          height="20px"
+          version="1.1"
+          viewBox="0 0 16 20"
+          width="16px"
           xmlns="http://www.w3.org/2000/svg"
-          class="button-icon"
-          viewBox="0 0 20 20"
-          fill="#ffffff"
         >
-          <path
-            fill-rule="evenodd"
-            d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-            clip-rule="evenodd"
-          />
+          <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+            <g fill="#ffffff" transform="translate(-2.000000, -127.000000)">
+              <g transform="translate(2.000000, 127.000000)">
+                <path
+                  d="M8,4 L8,0 L3,5 L8,10 L8,6 C11.3,6 14,8.7 14,12 C14,15.3 11.3,18 8,18 C4.7,18 2,15.3 2,12 L0,12 C0,16.4 3.6,20 8,20 C12.4,20 16,16.4 16,12 C16,7.6 12.4,4 8,4 L8,4 Z"
+                />
+              </g>
+            </g>
+          </g>
         </svg>
       </button>
     </div>
@@ -122,8 +127,8 @@ export default {
 
       this.typewriter = new Typewriter(this.$refs.code, {
         loop: false,
-        delay: 50,
-        typeSpeed: 100,
+        delay: 30,
+        typeSpeed: 150,
       });
 
       this.playing = true;
@@ -337,7 +342,9 @@ export default {
     margin: 0 auto 2rem;
     text-align: center;
 
-    .button-repeat {
+    .button-replay {
+      width: 60px;
+      height: 60px;
       -webkit-font-smoothing: antialiased;
       -webkit-text-size-adjust: 100%;
       -webkit-appearance: button;
@@ -366,6 +373,7 @@ export default {
       transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 
       &:hover {
+        opacity: 0.8;
         background-color: #1e293b;
         color: #fff;
       }

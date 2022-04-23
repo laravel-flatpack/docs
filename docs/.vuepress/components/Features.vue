@@ -240,6 +240,14 @@ export default {
     min-height: 0;
     padding: 1px;
     overflow: hidden;
+    min-width: 340px;
+    height: 177px;
+    background: rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 960px) {
+      min-width: 440px;
+      height: 229px;
+    }
   }
 }
 </style>

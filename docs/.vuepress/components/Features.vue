@@ -12,9 +12,8 @@
         <div class="content" ref="feature-2">
           <h3>🙌 Just what you need.</h3>
           <p>
-            Data tables, text inputs, date pickers, tag pickers, searchable
-            select menus, rich text editors, file upload fields, toggles and
-            more.
+            Data tables, text inputs, rich text editors, date pickers, tag
+            pickers, searchable select menus, image upload, toggles and more.
           </p>
         </div>
 

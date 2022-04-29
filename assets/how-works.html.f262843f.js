@@ -1,0 +1,1 @@
+const e={key:"v-13fe3820",path:"/guide/how-works.html",title:"How it works",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Example",slug:"example",children:[]}],filePathRelative:"guide/how-works.md"};export{e as data};

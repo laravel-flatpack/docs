@@ -1,0 +1,1 @@
+const t={key:"v-6a4890f5",path:"/guide/authentication.html",title:"Authentication",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Authorizing access to users",slug:"authorizing-access-to-users",children:[]}],filePathRelative:"guide/authentication.md"};export{t as data};

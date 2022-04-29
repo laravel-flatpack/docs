@@ -1,0 +1,1 @@
+const e={key:"v-1db685d2",path:"/reference/layout.html",title:"Layout",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Sidebar",slug:"sidebar",children:[]}],filePathRelative:"reference/layout.md"};export{e as data};

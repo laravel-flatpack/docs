@@ -1,0 +1,1 @@
+const e={key:"v-4cb7d26d",path:"/guide/generators.html",title:"Generators",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Generate Flatpack Files",slug:"generate-flatpack-files",children:[]},{level:2,title:"Generate Flatpack Actions",slug:"generate-flatpack-actions",children:[]}],filePathRelative:"guide/generators.md"};export{e as data};

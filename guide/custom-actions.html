@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.37">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><title>Custom actions | Flatpack</title><meta name="description" content="Administration panel for Laravel, ready to assemble.">
+    <link rel="modulepreload" href="/assets/app.41ec88e4.js"><link rel="modulepreload" href="/assets/custom-actions.html.3337595d.js"><link rel="modulepreload" href="/assets/custom-actions.html.cd492352.js">
+    <link rel="stylesheet" href="/assets/style.967401d5.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header ref_key="navbar" class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/" class=""><!----><span class="site-name can-hide">Flatpack</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/guide/" class="router-link-active" aria-label="Guide"><!--[--><!--]--> Guide <!--[--><!--]--></a></div><div class="navbar-item"><a href="/reference/" class="" aria-label="Reference"><!--[--><!--]--> Reference <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/laravel-flatpack/flatpack" rel="noopener noreferrer" target="_blank" aria-label="Github"><!--[--><!--]--> Github <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><form class="search-box" role="search"><input type="search" autocomplete="off" spellcheck="false" value><!----></form></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/guide/" class="router-link-active" aria-label="Guide"><!--[--><!--]--> Guide <!--[--><!--]--></a></div><div class="navbar-item"><a href="/reference/" class="" aria-label="Reference"><!--[--><!--]--> Reference <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/laravel-flatpack/flatpack" rel="noopener noreferrer" target="_blank" aria-label="Github"><!--[--><!--]--> Github <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading active"> <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a href="/guide/" class="router-link-active sidebar-item" aria-label="Introduction"><!--[--><!--]--> Introduction <!--[--><!--]--></a><!----></li><li><a href="/guide/how-works.html" class="sidebar-item" aria-label="How it works"><!--[--><!--]--> How it works <!--[--><!--]--></a><!----></li><li><a href="/guide/configuration.html" class="sidebar-item" aria-label="Configuration"><!--[--><!--]--> Configuration <!--[--><!--]--></a><!----></li><li><a href="/guide/authentication.html" class="sidebar-item" aria-label="Authentication"><!--[--><!--]--> Authentication <!--[--><!--]--></a><!----></li><li><a href="/guide/generators.html" class="sidebar-item" aria-label="Generators"><!--[--><!--]--> Generators <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/guide/custom-actions.html" class="router-link-active router-link-exact-active router-link-active sidebar-item active" aria-label="Custom actions"><!--[--><!--]--> Custom actions <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/guide/custom-actions.html#generate-an-action-class" class="router-link-active router-link-exact-active sidebar-item" aria-label="Generate an action class"><!--[--><!--]--> Generate an action class <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/guide/custom-actions.html#registering-the-action" class="router-link-active router-link-exact-active sidebar-item" aria-label="Registering the action"><!--[--><!--]--> Registering the action <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/guide/custom-actions.html#handling-the-action" class="router-link-active router-link-exact-active sidebar-item" aria-label="Handling the action"><!--[--><!--]--> Handling the action <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/guide/custom-actions.html#utility-methods" class="router-link-active router-link-exact-active sidebar-item" aria-label="Utility methods"><!--[--><!--]--> Utility methods <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/guide/custom-actions.html#example" class="router-link-active router-link-exact-active sidebar-item" aria-label="Example"><!--[--><!--]--> Example <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/guide/custom-actions.html#extending-actions" class="router-link-active router-link-exact-active sidebar-item" aria-label="Extending actions"><!--[--><!--]--> Extending actions <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><!--]--></ul><!--]--></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="custom-actions" tabindex="-1"><a class="header-anchor" href="#custom-actions" aria-hidden="true">#</a> Custom actions</h1><p>In addition to the <a href="/reference/" class="">Flatpack standard actions</a>, you can also create your own custom actions or extend existing ones.</p><h2 id="generate-an-action-class" tabindex="-1"><a class="header-anchor" href="#generate-an-action-class" aria-hidden="true">#</a> Generate an action class</h2><p>To generate a custom action, you may use the <code>flatpack:action</code> Artisan command:</p><div class="language-bash ext-sh"><pre class="language-bash"><code>php artisan flatpack:action custom-action
+</code></pre></div><p>This command generates a file under the <code>App\Actions\Flatpack</code> namespace:</p><div class="language-php ext-php"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Actions<span class="token punctuation">\</span>Flatpack</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Flatpack<span class="token punctuation">\</span>Actions<span class="token punctuation">\</span>FlatpackAction</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Flatpack<span class="token punctuation">\</span>Contracts<span class="token punctuation">\</span>FlatpackAction</span> <span class="token keyword">as</span> FlatpackActionContract<span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">CustomAction</span> <span class="token keyword">extends</span> <span class="token class-name">FlatpackAction</span> <span class="token keyword">implements</span> <span class="token class-name">FlatpackActionContract</span>
+<span class="token punctuation">{</span>
+    <span class="token doc-comment comment">/**
+     * Action authorization.
+     *
+     * <span class="token keyword">@return</span> <span class="token class-name"><span class="token keyword">bool</span></span>
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">authorize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token doc-comment comment">/**
+     * Handle action.
+     *
+     * <span class="token keyword">@return</span> <span class="token class-name"><span class="token keyword">void</span></span>
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">handle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// Do something...</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><p>The action class extends <code>Flatpack\Actions\FlatpackAction</code> and must implement the <code>Flatpack\Actions\Action</code> interface.</p><h2 id="registering-the-action" tabindex="-1"><a class="header-anchor" href="#registering-the-action" aria-hidden="true">#</a> Registering the action</h2><p>In order to use the action, you must register it in the <code>flatpack.php</code> configuration file:</p><div class="language-php ext-php"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">return</span> <span class="token punctuation">[</span>
+
+    <span class="token comment">/*
+    |--------------------------------------------------------------------------
+    | Actions
+    |--------------------------------------------------------------------------
+    |
+    | Flatpack form or list actions. You can add your own actions here.
+    |
+    */</span>
+    <span class="token string single-quoted-string">&#39;actions&#39;</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>
+        <span class="token string single-quoted-string">&#39;custom-action&#39;</span> <span class="token operator">=&gt;</span> <span class="token class-name class-name-fully-qualified static-context">App<span class="token punctuation">\</span>Actions<span class="token punctuation">\</span>CustomAction</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// ...</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+</span></code></pre></div><p>Now the action is ready to be used in the form or list composition.</p><div class="language-yaml ext-yml"><pre class="language-yaml"><code><span class="token key atrule">custom-action</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> button
+  <span class="token key atrule">label</span><span class="token punctuation">:</span> Click me
+  <span class="token key atrule">action</span><span class="token punctuation">:</span> custom<span class="token punctuation">-</span>action <span class="token comment"># The action name</span>
+</code></pre></div><h2 id="handling-the-action" tabindex="-1"><a class="header-anchor" href="#handling-the-action" aria-hidden="true">#</a> Handling the action</h2><p>When an action is triggered, the action class will be initialised and the <code>handle</code> method will be called.</p><p>Inside the <code>handle</code> method, you may use the following properties:</p><table><thead><tr><th style="text-align:left;">Property name</th><th style="text-align:left;">Description</th><th style="text-align:left;">Notes</th></tr></thead><tbody><tr><td style="text-align:left;"><strong>entity</strong></td><td style="text-align:left;">The entity name (plural)</td><td style="text-align:left;"><em>e.g.</em> &quot;users&quot;</td></tr><tr><td style="text-align:left;"><strong>model</strong></td><td style="text-align:left;">The eloquent model class name</td><td style="text-align:left;"><em>e.g.</em> &quot;App\Models\User&quot;</td></tr><tr><td style="text-align:left;"><strong>entry</strong></td><td style="text-align:left;">The current eloquent active record</td><td style="text-align:left;">Available on forms only</td></tr><tr><td style="text-align:left;"><strong>fields</strong></td><td style="text-align:left;">The form field current values</td><td style="text-align:left;">Available on forms only</td></tr><tr><td style="text-align:left;"><strong>files</strong></td><td style="text-align:left;">The temporary files attached to the form</td><td style="text-align:left;">Available on forms only</td></tr><tr><td style="text-align:left;"><strong>selected</strong></td><td style="text-align:left;">Array of ids of the selected records</td><td style="text-align:left;">Available on lists only</td></tr><tr><td style="text-align:left;"><strong>user</strong></td><td style="text-align:left;">The currently logged in user</td><td style="text-align:left;"></td></tr></tbody></table><h3 id="utility-methods" tabindex="-1"><a class="header-anchor" href="#utility-methods" aria-hidden="true">#</a> Utility methods</h3><p>The action class instance exposes the following methods you can use:</p><table><thead><tr><th style="text-align:left;">Method</th><th style="text-align:left;">Description</th></tr></thead><tbody><tr><td style="text-align:left;"><strong>entityName</strong></td><td style="text-align:left;">Returns the entity name. The <code>$plural</code> attribute can be set to <code>true</code> to get the plural form.</td></tr><tr><td style="text-align:left;"><strong>isBulk</strong></td><td style="text-align:left;">Returns <code>true</code> if bulk action is performed (Lists only)</td></tr></tbody></table><h3 id="example" tabindex="-1"><a class="header-anchor" href="#example" aria-hidden="true">#</a> Example</h3><p>In the example below, we will override the <code>foo</code> attribute of the active record <code>$this-&gt;entry</code> and save the changes to the database using Eloquent model&#39;s <code>save</code> method.</p><p>The method <code>getMessage</code>, if defined, will be called to retrieve the action&#39;s success message.</p><div class="language-php ext-php"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Actions<span class="token punctuation">\</span>Flatpack</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Flatpack<span class="token punctuation">\</span>Actions<span class="token punctuation">\</span>FlatpackAction</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Flatpack<span class="token punctuation">\</span>Contracts<span class="token punctuation">\</span>FlatpackAction</span> <span class="token keyword">as</span> FlatpackActionContract<span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">CustomAction</span> <span class="token keyword">extends</span> <span class="token class-name">FlatpackAction</span> <span class="token keyword">implements</span> <span class="token class-name">FlatpackActionContract</span>
+<span class="token punctuation">{</span>
+    <span class="token doc-comment comment">/**
+     * Model instance.
+     *
+     * <span class="token keyword">@var</span> <span class="token class-name"><span class="token punctuation">\</span>Illuminate<span class="token punctuation">\</span>Database<span class="token punctuation">\</span>Eloquent<span class="token punctuation">\</span>Model</span>
+     */</span>
+    <span class="token keyword">public</span> <span class="token variable">$entry</span><span class="token punctuation">;</span>
+
+    <span class="token doc-comment comment">/**
+     * Get success message.
+     *
+     * <span class="token keyword">@return</span> <span class="token class-name"><span class="token keyword">string</span></span>
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">getMessage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">__</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;:entity has been updated.&#39;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+            <span class="token string single-quoted-string">&#39;entity&#39;</span> <span class="token operator">=&gt;</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">entityName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token doc-comment comment">/**
+     * Handle action.
+     *
+     * <span class="token keyword">@return</span> <span class="token class-name"><span class="token keyword">void</span></span>
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">handle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">entry</span><span class="token operator">-&gt;</span><span class="token property">foo</span> <span class="token operator">=</span> <span class="token string single-quoted-string">&#39;bar&#39;</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">entry</span><span class="token operator">-&gt;</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><h2 id="extending-actions" tabindex="-1"><a class="header-anchor" href="#extending-actions" aria-hidden="true">#</a> Extending actions</h2><p>You can extend existing actions by generating a new action that extends the original action.</p><p>In this example, we will extend the &quot;save&quot; action.</p><p>Generate a new custom action, using the <code>flatpack:action</code> Artisan command:</p><div class="language-bash ext-sh"><pre class="language-bash"><code>php artisan flatpack:action custom-save
+</code></pre></div><p>The generated file will be placed under the <code>App\Actions\Flatpack</code> namespace.</p><p>The action class will extend the <code>Flatpack\Actions\Save</code> class, overriding the <code>authorize</code> method logic to check if the current user has the required permissions to perform the action.</p><div class="language-php ext-php"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">namespace</span> <span class="token package">App<span class="token punctuation">\</span>Actions<span class="token punctuation">\</span>Flatpack</span><span class="token punctuation">;</span>
+
+<span class="token keyword">use</span> <span class="token package">Flatpack<span class="token punctuation">\</span>Actions<span class="token punctuation">\</span>Save</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Flatpack<span class="token punctuation">\</span>Contracts<span class="token punctuation">\</span>FlatpackAction</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name-definition class-name">CustomSave</span> <span class="token keyword">extends</span> <span class="token class-name">Save</span> <span class="token keyword">implements</span> <span class="token class-name">FlatpackAction</span>
+<span class="token punctuation">{</span>
+    <span class="token doc-comment comment">/**
+     * Action authorization.
+     *
+     * <span class="token keyword">@return</span> <span class="token class-name"><span class="token keyword">bool</span></span>
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function-definition function">authorize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">isOwner</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token function">hasPermissions</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token doc-comment comment">/**
+     * Determine if the user is the owner of the entry.
+     *
+     * <span class="token keyword">@return</span> <span class="token class-name"><span class="token keyword">bool</span></span>
+     */</span>
+    <span class="token keyword">private</span> <span class="token keyword">function</span> <span class="token function-definition function">isOwner</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">entry</span><span class="token operator">-&gt;</span><span class="token property">user_id</span> <span class="token operator">===</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">user</span><span class="token operator">-&gt;</span><span class="token property">id</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token doc-comment comment">/**
+     * Determine if the user has the permission to create or update the entry.
+     *
+     * <span class="token keyword">@return</span> <span class="token class-name"><span class="token keyword">bool</span></span>
+     */</span>
+    <span class="token keyword">private</span> <span class="token keyword">function</span> <span class="token function-definition function">hasPermissions</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">in_array</span><span class="token punctuation">(</span><span class="token constant boolean">true</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+            <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">user</span><span class="token operator">-&gt;</span><span class="token function">can</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;create&#39;</span><span class="token punctuation">,</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">model</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">user</span><span class="token operator">-&gt;</span><span class="token function">can</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&#39;update&#39;</span><span class="token punctuation">,</span> <span class="token variable">$this</span><span class="token operator">-&gt;</span><span class="token property">model</span><span class="token punctuation">)</span>
+        <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></code></pre></div><p>We now have to register the action in the <code>config/flatpack.php</code> configuration file. Since the <code>Save</code> action is already registered, we can simply replace it with the new action:</p><div class="language-php ext-php"><pre class="language-php"><code><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+
+<span class="token keyword">return</span> <span class="token punctuation">[</span>
+
+    <span class="token string single-quoted-string">&#39;actions&#39;</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>
+        <span class="token string single-quoted-string">&#39;save&#39;</span> <span class="token operator">=&gt;</span> <span class="token class-name class-name-fully-qualified static-context">App<span class="token punctuation">\</span>Actions<span class="token punctuation">\</span>CustomSave</span><span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">,</span>
+
+        <span class="token comment">// ...</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+</span></code></pre><div class="highlight-lines"><br><br><br><br><br><div class="highlight-line"> </div><br><br><br></div></div><p>Finally, the extended action is ready to be used:</p><div class="language-yaml ext-yml"><pre class="language-yaml"><code><span class="token key atrule">save</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> button
+  <span class="token key atrule">label</span><span class="token punctuation">:</span> Click me
+  <span class="token key atrule">action</span><span class="token punctuation">:</span> save <span class="token comment"># The action name</span>
+</code></pre></div><!--]--></div><footer class="page-meta"><!----><!----><!----></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/guide/generators.html" class="" aria-label="Generators"><!--[--><!--]--> Generators <!--[--><!--]--></a></span><!----></p></nav><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app.41ec88e4.js" defer></script>
+  </body>
+</html>
